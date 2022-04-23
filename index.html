@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Arne Wendler | Home</title>
+        <script src="https://kit.fontawesome.com/3e1431433b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- EmailJS scripts -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/integration
+                emailjs.init('bzbDMVAdocCp5GAdE');
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm('contact_service', 'contact_form', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                        e.target.reset()
+                });
+            }
+        </script>
+
+    </head>
+
+
+    <body>
+
+    <!-- HEADER -->        
+        <header>
+            <div id="logo">
+                <a href="#">
+                    <img src="img/icon1_transparent.png" alt="Logo">
+                </a>
+            </div>
+
+            <nav id="main_nav">
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#resume"><li>Resume</li></a>
+                    <a href="#skills"><li>Skills</li></a>
+                    <a href="#work"><li>Work</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </nav>
+        </header>
+
+    <!-- HOME -->  
+        <section id="home">
+            <hr>
+            <div class="splash">
+                <img class="fade-in" src="img/icon1_transparent.png" alt="trüffel">
+                <h1 class="fade-in">Arne Wendler</h1>
+                <a href="#about">
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </div>
+        </section>
+
+    <!-- ABOUT -->  
+        <section id="about">
+            <h3>About me</h3>
+            <hr>
+            <img src="img/10-PC_06877.jpg" alt="Avatar">
+            <p>Hi, my name is Arne Wendler. Welcome to my personal website.</p>
+            <p>Here you will find more information about what drives me, my background and also how to get in touch with me.</p>
+            <p>Traffic is all around us. The way we get from our home to work or to different freetime activities. How groceries get to the supermarket, or how data travels from one point of the world to another in a matter of seconds.
+            Often we take these forms of travelling/traffic for granted and don't see what is all working behind that.
+            From my early days on traffic, especially cars and airplanes always fascinated me.
+            Probably that's the reason why my first dreamjob was to become a pilot :D</p>
+            <p>Growing up, because pilots weren't needed that much, my focus had to shift to something else in the buzzing world of traffic.</p>
+            <p>In my quest I found TU Dresden and especially the Transportation economics program which helped me understand the world of traffic firstly from an economists point of view but also offered insights into ecological and psychological views on traffic.</p>
+            <p>Armed with that knowledge FDTech - a mobility solutions provider for the future - offered me an Internship and a following working student employment.</p>
+            <p>Climate change, the demographic change, road safety, equality and other factors force us to think different about traffic and traffic solutions than we did before.
+            Taking advantage of the modern technologies we have at our hands we must face these new challenges and find solutions to take care of the wellbeing of our planet, our fellow men and women and ourselves.</p>
+            
+            <h4>Being a part of the new change in Traffic!</h4> <!-- In fett und auffallend - slogan mäßig, mein drive - drive (fahren) wortspiel -->
+        </section>
+
+    <!-- ======= My Resume Section =======-->
+    <section id="resume" class="resume">
+        <div class="container">
+  
+          <div class="section-title">
+            <h3>Resume</h3>
+            <hr>
+            <p>Through my studies I gained a comprehensive insight into the field of transportation economics from different angles.</p>
+            <p>These theoretical insights and the team-mentality aspects of basketball came in handy when working for FDTech.</p>
+          </div>
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Master of Science Transportation Economics</h4>
+                <h5>2021 - 2023</h5>
+                <p><em>Technische Universität Dresden, Dresden, Germany</em></p>
+                <p>
+                    <ul>
+                        <li>Focus on Transport Policy and Data Analytics</li>
+                        <li>Minor coursework in Psychology and Behavioural Economics, Operations Research and Spatial Economics</li>
+                    </ul>
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4>Bachelor of Science Verkehrswirtschaft</h4>
+                <h5>2018 - 2021</h5>
+                <p><em>Technische Universität Dresden, Dresden, Germany</em></p>
+                <p>
+                    <ul>
+                    <li>Introduction into standard principles of economics and accounting</li>
+                    <li>Focus on Transport Policy, Spatial Economics and Management of Traffic and Transport Companies</li>
+                    <li>Bachelor thesis topic: "Routing autonomous vehicles in congested transportation networks"</li>
+                    </ul>
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4>Exchange Year</h4>
+                <h5>2015 - 2016</h5>
+                <p><em>Oregon High School, Oregon IL, USA</em></p>
+                <p>
+                    <ul>
+                    <li>Exchange year at an American High School</li>
+                    </ul>
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4>Abitur</h4>
+                <h5>2009 - 2018</h5>
+                <p><em>Sportgymnasium Chemnitz, Chemnitz, Germany</em></p>
+                <p>
+                    <ul>
+                    <li>Intensified courses in German, English and Sport</li>
+                    </ul>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Internship and Working Student</h4>
+                <h5>2021 - Present</h5>
+                <p><em>FDTech, Chemnitz, Germany </em></p>
+                <p>
+                <ul>
+                    <li>Main focus on creating Digital Twins for testing</li>
+                    <li>Topology creation in "Simulation of Urban MObility (SUMO)"</li>
+                    <li>Creation of (real-life) traffic scenarios for a Micro-, Macroscopic Traffic-Simulation with SUMO and CarMaker</li>
+                    <li>Filetype conversion for parking environment project</li>
+                </ul>
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4>Professional Basketball Player</h4>
+                <h5>2018 - present</h5>
+                <p><em>Dresden Titans GmbH, Dresden, Germany</em></p>
+                <p>
+                <ul>
+                  <li>Important part of moving up squad to 2. Basketball Bundesliga ProA 2021/22</li>
+                  <li>Motivation, teaching basketball to elementary school kids as part of the "Dresden Titans Schultour"</li>
+                  <li>Several sponsoring events with Photos, Videos or Meet and Greets to promote image of the club</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--End My Resume Section -->
+
+
+    <!-- Skills / Achievements -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-title">
+                  <h3>Skills & Achievements</h3>
+                  <hr>
+                </div>
+                    <h3 class="resume-title">Skills</h3>
+                    <div class="resume-item">
+                        <h4>Languages</h4>
+                        <p>
+                            <ul>
+                                <li>German: mother tongue</li>
+                                <li>English: C1</li>
+                                <li>Russian: A2</li>
+                            </ul>
+                        </p>
+                        <h4>Further Skills</h4>
+                      <p>
+                          <ul>
+                              <li>proficient MS Office</li>
+                              <li>basic knowledge in Python, R and LaTeX</li>
+                          </ul>
+                      </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <h3 class="resume-title">Achievements</h3>
+                    <div class="resume-item">
+                    <p>
+                        <ul>
+                            <li>Deutsche U18 Jugendnationalmannschaft Basketball</li>
+                            <li>Deutsche U16 Jugendnationalmannschaft Basketball</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+
+    <!-- WORK -->    
+        <section id="work">
+            <h3>Work</h3>
+            <hr>
+
+            <div id="projects">
+                <ul>
+                    <li><a href="https://github.com/SlimErnie/BachelorThesis"><img src="img/Thumb1-1.png" alt="Projekt_01"></a></li>
+                    <li><a href="https://github.com/SlimErnie/Website"><img src="img/Thumb2-1.png" alt="Projekt_02"></a></li>
+                    <li><a href="#"><img src="img/Thumb3.png" alt="Projekt_03"></a></li>
+                    <li><a href="#"><img src="img/cs2.png" alt="Projekt_04"></a></li>
+                    <li><a href="#"><img src="img/cs2.png" alt="Projekt_05"></a></li>
+                    <li><a href="#"><img src="img/cs2.png" alt="Projekt_06"></a></li>
+                </ul>
+            </div>
+        </section>
+
+    
+
+
+
+    <!-- CONTACT -->    
+        <section id="contact">
+            <h3>Contact</h3>
+            <hr>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <input type="text" name="user_name" placeholder="Your name">
+                <input type="email" name="user_email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button  type="submit" name="submit" value="Send">SEND MAIL</button>
+            </form>
+        </section>
+
+    <!-- FOOTER -->
+        <footer>
+            <a href="https://www.instagram.com/arne.99/?hl=de" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/arne-wendler-719201223/?originalSubdomain=de" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/channel/UCn4-lQhbACX_Slfi5w9G_xg" class="fa fa-youtube"></a>
+
+            <p>
+                &copy; 2022 Arne Wendler
+            </p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/mobile-menu.js"> </script>
+        <script src="intro.js"></script>
+
+    </body>
+</html>
